@@ -10,6 +10,6 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "mysql://b7e2437887xxxa:0200xxx6@us-cdbr-iron-east-02.cleardb.net/heroku_7643ec736354xxx?reconnect=true"
   }
 }
