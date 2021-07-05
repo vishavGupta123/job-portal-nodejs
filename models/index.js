@@ -12,7 +12,7 @@ let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
-  sequelize = new Sequelize('heroku_7643ec736354xxx', 'b7e2437887xxxa', '0200xxx6', config);
+  sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
 fs
