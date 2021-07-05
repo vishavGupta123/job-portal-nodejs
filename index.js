@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use('/',require('./routes'));
 
-app.listen(port,(err)=>{
+app.listen(process.env.PORT || 3000,(err)=>{
     if(err){
         console.log('error in connecting the server');
         return;
